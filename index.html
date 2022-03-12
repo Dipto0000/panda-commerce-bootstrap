@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Mart</title>
-    
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="styles/style.css">
     <!-- downloaded bootstrap css link -->
     
     <link rel="stylesheet" href="files/bootstrap.min.css">
@@ -14,7 +15,7 @@
 <body>
     <!-- Navigation -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="">
@@ -25,9 +26,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Shoes</a>
-        <a class="nav-link" href="#">Backpack</a>
-        <a class="nav-link" href="#">Subscribe</a>
+        <a class="nav-link" href="#shoes">Shoes</a>
+        <a class="nav-link" href="#backpacks">Backpacks</a>
+        <a class="nav-link" href="#subscribe">Subscribe</a>
       </div>
     </div>
   </div>
@@ -40,7 +41,7 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner bg-primary rounded my-5">
+  <div class="carousel-inner panda-bg-primary rounded my-5">
     <div class="carousel-item active ">
       <div class="row p-5 d-flex align-items-center">
         <div class="col-lg-7">
@@ -94,7 +95,7 @@
 
     <!-- Categories -->
     <main>
-    <div class="container my-3">
+    <div class="container my-3 categories">
       <div class="row g-5">
       <div class="col-4">
         <div class="p-3 border bg-warning d-flex align-items-center justify-content-around rounded-3">
@@ -104,7 +105,7 @@
       </div>
       <div class="col-4">
         <div class="p-3 bg-primary border d-flex align-items-center justify-content-around rounded-3">
-          <h3 class="text-white">Bags</h3>
+          <h3 class="text-white">Backpacks</h3>
           <img src="images/categories/bag.png" alt="">
         </div>
       </div>
@@ -120,7 +121,7 @@
     <!-- Shoes -->
 
     <section class="container">
-      <h1 class="mt-5">Shoes</h1>
+      <h1 class="mt-5" id="shoes">Shoes</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col pb-3 shadow-lg">
     <div class="card h-100 border-0">
@@ -165,7 +166,7 @@
     <!-- Backpacks -->
 
     <section class="container">
-      <h1 class="mt-5">Backpack</h1>
+      <h1 class="mt-5" id="backpacks">Backpack</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="pb-3 col shadow-lg">
     <div class="card h-100 border-0">
@@ -207,15 +208,14 @@
 </div>
     </section>
     <!-- Form -->
-    <section class="d-flex justify-content-center align-items-center container my-5 bg-primary" style="height: 300px;">
+    <section id="subscribe" class="d-flex justify-content-center align-items-center container my-5 panda-bg-primary " style="height: 300px;">
       <div>
         <div>
           <h1>LET'S STAY IN TOUCH</h1>
           <p>Get updates on sales, specials and more</p>
-          <form action="">
-            <input type="text" placeholder="Yout Email">
-            <br>
-            <button type="text" class="ms-3 btn btn-warning">Submit</button>
+          <form>
+            <input class="form-control mb-2" type="text" placeholder="Yout Email">
+            <button type="text" class="ms-3 btn btn-warning rounded-3">Submit</button>
           </form>
         </div>
       </div>
@@ -224,7 +224,7 @@
 
     <!-- Footer -->
     <footer class="text-center">
-      <p><small>© 2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+      <p><small>© 2022. Panda Commerce. All rights reserved. Shahriar Ahmed, Bangladesh.</small></p>
     </footer>
     <!-- Downloaded bootstrap JS link -->
     <script src="files/bootstrap.min.js"></script>
